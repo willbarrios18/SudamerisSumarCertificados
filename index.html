@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Certificado</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos adicionales para la imagen y los botones de navegación */
+        .logo-container {
+            margin-bottom: 30px; /* Espacio debajo del logo */
+        }
+
+        .logo-container img {
+            max-width: 400px; /* Tamaño máximo del logo */
+            height: auto;
+            display: block; /* Para centrar la imagen */
+            margin: 0 auto; /* Para centrar la imagen */
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center; /* Centrar los botones */
+            gap: 15px; /* Espacio entre los botones */
+            margin-top: 30px; /* Espacio encima de los botones */
+            margin-bottom: 20px; /* Espacio debajo de los botones */
+        }
+
+        .nav-buttons .button-link {
+            background-color: #007bff; /* Color azul para los botones de navegación */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none; /* Quitar el subrayado de los enlaces */
+            transition: background-color 0.3s ease;
+            display: inline-block; /* Para que apliquen estilos como padding */
+        }
+
+        .nav-buttons .button-link:hover {
+            background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="https://sudameris.sumar.com.py/pluginfile.php/1/theme_moove/logo/1739191764/LOGO-SBK-01-2-new-2.png" alt="Logo de Sudameris">
+        </div>
+
+        <h1>Verificación de Certificado</h1>
+        <p>Por favor, introduzca el código de verificación de su certificado para confirmar su validez.</p>
+
+        <div class="input-group">
+            <label for="codigoInput">Código de Certificado:</label>
+            <input type="text" id="codigoInput" placeholder="Ej: ABC-123456789">
+            <button onclick="verificarCertificado()">Verificar</button>
+        </div>
+
+        <div id="resultado" class="resultado">
+            </div>
+
+        <div class="nav-buttons">
+            <a href="https://sudameris.sumar.com.py/login/index.php" class="button-link">Acceder</a>
+            <a href="https://sudameris.sumar.com.py/cursos.html" class="button-link">Cursos</a>
+        </div>
+
+        <div class="footer">
+            <p>&copy; [Sudameris Sumar 2025]</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+label {
+    align-self: flex-start;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"] {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: calc(100% - 30px); /* Adjust for padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+button {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green */
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #e9ecef;
+    min-height: 80px; /* Para que no se encoja */
+    text-align: left;
+}
+
+.resultado div {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.resultado p {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Specific styles for valid/invalid messages */
+.resultado .valid-message {
+    color: green;
+    font-weight: bold;
+}
+
+.resultado .invalid-message {
+    color: red;
+    font-weight: bold;
+}
+
+/* Estilos para la sección de descarga */
+.download-section {
+    margin-top: 25px;
+    text-align: center; /* Centra el botón */
+}
+
+.download-button {
+    background-color: #007bff; /* Azul vibrante */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    display: inline-block; /* Permite aplicar padding y centrar */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+}
+
+.download-button:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+        margin: 20px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    button {
+        font-size: 1rem;
+    }
+}
